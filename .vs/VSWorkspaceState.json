@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\src",
+    "\\src\\ProjetoEscola"
   ],
-  "SelectedNode": "\\src",
+  "SelectedNode": "\\src\\ProjetoEscola\\Online School.sln",
   "PreviewInSolutionExplorer": false
 }
