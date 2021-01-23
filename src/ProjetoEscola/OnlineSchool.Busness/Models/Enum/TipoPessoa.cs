@@ -6,7 +6,7 @@ namespace OnlineSchool.Busness.Models.Enum
 {
     public enum TipoPessoa
     {
-        Aluno = 1,
-        Instrutor
+        PessoaFisica = 1,
+        PessoaJuridica
     }
 }

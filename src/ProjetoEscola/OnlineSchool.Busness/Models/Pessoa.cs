@@ -1,4 +1,6 @@
-﻿using OnlineSchool.Busness.Models.Enum;
+﻿using OnlineSchool.Busness.Academico.Models;
+using OnlineSchool.Busness.Models.Enum;
+using System.Collections.Generic;
 
 namespace OnlineSchool.Busness.Models
 {
@@ -9,6 +11,9 @@ namespace OnlineSchool.Busness.Models
         public string Documento { get; set; }
         public TipoPessoa TipoPessoa { get; set; }
         public bool Ativo { get; set; }
+
+        /* EF Relations */
+        public IEnumerable<Curso> Cursos { get; set; }
 
     }
 }

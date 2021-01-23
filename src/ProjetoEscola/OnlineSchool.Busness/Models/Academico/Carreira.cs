@@ -8,6 +8,8 @@ namespace OnlineSchool.Busness.Academico.Models
         public string Nome { get; set; }
         public string Descricao { get; set; }
         public bool Ativo { get; set; }
+
+        /* EF Relations */
         public IEnumerable<Curso> Cursos { get; set; }
     }
 }
