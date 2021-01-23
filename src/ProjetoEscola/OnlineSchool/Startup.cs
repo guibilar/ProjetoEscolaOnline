@@ -1,10 +1,12 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using OnlineSchool.App.Configurations;
+using OnlineSchool.Data.Context;
 
 namespace OnlineSchool.App
 {
@@ -32,8 +34,8 @@ namespace OnlineSchool.App
         {
             services.AddIdentityConfiguration(Configuration);
 
-            //services.AddDbContext<MeuDbContext>(options =>
-            //    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<EscolaDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddAutoMapper(typeof(Startup));
 

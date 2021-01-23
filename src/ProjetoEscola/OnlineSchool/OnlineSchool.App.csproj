@@ -13,12 +13,12 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.ViewFeatures" Version="2.2.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3" />
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="3.1.3" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.8" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\OnlineSchool.Busness\OnlineSchool.Busness.csproj" />
+    <ProjectReference Include="..\OnlineSchool.Data\OnlineSchool.Data.csproj" />
   </ItemGroup>
 
 </Project>
