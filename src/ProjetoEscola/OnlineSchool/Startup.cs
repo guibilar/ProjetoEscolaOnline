@@ -41,6 +41,8 @@ namespace OnlineSchool.App
 
             services.AddMvcConfiguration();
 
+            services.ResolveDependencies();
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

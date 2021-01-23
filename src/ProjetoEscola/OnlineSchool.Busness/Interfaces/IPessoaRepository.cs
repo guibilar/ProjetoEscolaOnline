@@ -12,7 +12,7 @@ namespace OnlineSchool.Busness.Interfaces
 
         Task<IEnumerable<Pessoa>> ObterPessoasAtivas();
 
-        Task<Pessoa> ObterPessoaCurso(Guid pessoaId);
+        Task<Pessoa> ObterPessoaCursos(Guid pessoaId);
 
     }
 }

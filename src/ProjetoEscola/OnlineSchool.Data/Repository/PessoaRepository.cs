@@ -14,7 +14,7 @@ namespace OnlineSchool.Data.Repository
     {
         public PessoaRepository(EscolaDbContext context) : base(context) { }
 
-        public async Task<Pessoa> ObterPessoaCurso(Guid pessoaId)
+        public async Task<Pessoa> ObterPessoaCursos(Guid pessoaId)
         {
             return await Db.Pessoas.AsNoTracking()
                 .Include(c => c.Cursos)
