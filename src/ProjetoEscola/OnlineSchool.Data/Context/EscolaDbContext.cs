@@ -3,7 +3,8 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-
+using OnlineSchool.Busness.Academico.Models;
+using OnlineSchool.Busness.Models;
 namespace OnlineSchool.Data.Context
 {
     public class EscolaDbContext : DbContext
@@ -13,6 +14,11 @@ namespace OnlineSchool.Data.Context
             ChangeTracker.QueryTrackingBehavior = QueryTrackingBehavior.NoTracking;
             ChangeTracker.AutoDetectChangesEnabled = false;
         }
+
+        public DbSet<Carreira> Carreiras { get; set; }
+        public DbSet<Curso> Cursos { get; set; }
+        public DbSet<Pessoa> Pessoas { get; set; }
+        public DbSet <MaterialDeApoio> MateriaisDeApoio { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

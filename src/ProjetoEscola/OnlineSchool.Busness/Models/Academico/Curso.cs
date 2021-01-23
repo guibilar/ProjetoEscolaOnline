@@ -1,4 +1,5 @@
 ﻿using OnlineSchool.Busness.Models;
+using OnlineSchool.Busness.Models.Academico;
 using System;
 using System.Collections.Generic;
 
@@ -14,8 +15,8 @@ namespace OnlineSchool.Busness.Academico.Models
         public bool Ativo { get; set; }
 
         /* EF Relations */
-        public IEnumerable<MaterialDeApoio> MateriaisDeApoio { get; set; }
-        public IEnumerable<Pessoa> Alunos { get; set; }
+        public virtual IEnumerable<MaterialDeApoio> MateriaisDeApoio { get; set; }
+        public virtual IEnumerable<CursoPessoa> Alunos { get; set; }
         public Carreira Carreira { get; set; }
     }
 }

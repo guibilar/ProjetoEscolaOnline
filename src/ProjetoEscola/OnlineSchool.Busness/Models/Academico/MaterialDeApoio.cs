@@ -11,6 +11,6 @@ namespace OnlineSchool.Busness.Academico.Models
         public bool Ativo { get; set; }
 
         /* EF Relations */
-        public Curso Curso { get; set; }
+        public virtual Curso Curso { get; set; }
     }
 }

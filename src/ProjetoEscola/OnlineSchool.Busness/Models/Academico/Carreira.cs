@@ -10,6 +10,6 @@ namespace OnlineSchool.Busness.Academico.Models
         public bool Ativo { get; set; }
 
         /* EF Relations */
-        public IEnumerable<Curso> Cursos { get; set; }
+        public virtual IEnumerable<Curso> Cursos { get; set; }
     }
 }
